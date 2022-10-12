@@ -12,7 +12,7 @@ def main():
         a = eval(pyperclip.paste())
     except:
         a = "Error_unable_to_calculate_input"
-    pyperclip.copy(a)
+    pyperclip.copy(str(a))
     pyautogui.hotkey('ctrl', 'v')
 
 main()
